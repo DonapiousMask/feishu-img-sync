@@ -5,7 +5,7 @@ import re
 
 # ================= 默认配置 =================
 DEFAULT_APP_ID = "cli_a9f33af0a238dbd3"
-DEFAULT_APP_SECRET = "I3Cko6T9AI3AIZENXVJ6Rhsl46KiiClg"
+DEFAULT_APP_SECRET = "I3Cko6T9AI3AIZEnXVJ6Rhsl46KiiClg"
 
 st.set_page_config(page_title="飞书图片自动搬运工", page_icon="🖼️")
 
@@ -133,4 +133,5 @@ if st.button("🚀 开始同步 1.1 万条数据", type="primary"):
                     continue
 
             st.balloons()
+
             st.success(f"🏁 任务圆满完成！本次共成功搬运 {total_success} 张图片。")
