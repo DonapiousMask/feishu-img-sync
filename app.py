@@ -59,7 +59,7 @@ with col1:
 with col2:
     target_col = st.text_input("📁 目标附件列名", value="产品图片")
 
-if st.button("🚀 开始同步 1.1 万条数据", type="primary"):
+if st.button("🚀 开始同步数据", type="primary"):
     if not feishu_url:
         st.error("请输入表格链接！")
     else:
@@ -135,3 +135,4 @@ if st.button("🚀 开始同步 1.1 万条数据", type="primary"):
             st.balloons()
 
             st.success(f"🏁 任务圆满完成！本次共成功搬运 {total_success} 张图片。")
+
